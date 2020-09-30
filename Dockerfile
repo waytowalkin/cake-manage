@@ -7,5 +7,5 @@ RUN mvn -f /home/app/pom.xml clean package
 # Create an Image
 FROM openjdk:8-jdk-alpine
 EXPOSE 8080
-COPY --from=stage1 /home/app/target/cake-manage-0.0.1-SNAPSHOT.jar cake-manage-0.0.1-SNAPSHOT.jar
-ENTRYPOINT ["sh", "-c", "java -jar /cake-manage-0.0.1-SNAPSHOT.jar"]
+COPY --from=stage1 /home/app/target/cake-manager-0.0.1-SNAPSHOT.jar cake-manager-0.0.1-SNAPSHOT.jar
+ENTRYPOINT ["sh", "-c", "java -jar /cake-manager-0.0.1-SNAPSHOT.jar"]
