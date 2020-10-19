@@ -45,10 +45,5 @@ public class DataBaseLoader implements CommandLineRunner {
 	this.repository.save(new Cake("Apricot crumble", "Cake", "Made from True Apricots", oliver));
 
 	SecurityContextHolder.clearContext();
-//
-//	
-//	public void run(String... strings) throws Exception {
-//		this.repository.save(new CakeManager("Mango", "Cake", "This cake is prepared using the mango"));
-//	}
 }
 }
